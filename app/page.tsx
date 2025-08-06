@@ -205,273 +205,342 @@ export default function Home() {
 				</div>
 			</section>
 
-			{/* Competitive Advantage */}
+			{/* Developer Friendly Section */}
+			<section className="section" style={{ background: "#ffffff" }}>
+				<div className="container">
+					<h2 className="section-title">Simple Deploy Process</h2>
+					<p className="section-subtitle">
+						Deploy confidential applications with just a few clicks - no complex
+						setup required
+					</p>
+
+					<div
+						style={{
+							display: "flex",
+							alignItems: "center",
+							gap: "3rem",
+							flexWrap: "wrap",
+							marginTop: "3rem",
+						}}
+					>
+						<div style={{ flex: "1", minWidth: "300px" }}>
+							<img
+								src="/res/deploy-cvm.png"
+								alt="Deploy CVM Process"
+								style={{
+									width: "100%",
+									height: "auto",
+									borderRadius: "12px",
+									boxShadow: "0 8px 25px rgba(0, 0, 0, 0.1)",
+									border: "1px solid #e1e5e9",
+								}}
+							/>
+						</div>
+						<div style={{ flex: "1", minWidth: "300px" }}>
+							<h3
+								style={{
+									fontSize: "1.8rem",
+									marginBottom: "1.5rem",
+									color: "#2c3e50",
+								}}
+							>
+								🚀 Three Steps to Confidential Computing
+							</h3>
+							<div style={{ marginBottom: "2rem" }}>
+								<div
+									style={{
+										display: "flex",
+										alignItems: "flex-start",
+										marginBottom: "1.5rem",
+									}}
+								>
+									<div
+										style={{
+											background: "#3498db",
+											color: "white",
+											borderRadius: "50%",
+											width: "32px",
+											height: "32px",
+											display: "flex",
+											alignItems: "center",
+											justifyContent: "center",
+											fontWeight: "bold",
+											marginRight: "1rem",
+											flexShrink: 0,
+										}}
+									>
+										1
+									</div>
+									<div>
+										<h4 style={{ margin: "0 0 0.5rem 0", fontSize: "1.1rem" }}>
+											Paste Docker Compose
+										</h4>
+										<p
+											style={{ margin: 0, color: "#666", fontSize: "0.95rem" }}
+										>
+											Copy your existing docker-compose.yml file - no
+											modifications needed
+										</p>
+									</div>
+								</div>
+								<div
+									style={{
+										display: "flex",
+										alignItems: "flex-start",
+										marginBottom: "1.5rem",
+									}}
+								>
+									<div
+										style={{
+											background: "#3498db",
+											color: "white",
+											borderRadius: "50%",
+											width: "32px",
+											height: "32px",
+											display: "flex",
+											alignItems: "center",
+											justifyContent: "center",
+											fontWeight: "bold",
+											marginRight: "1rem",
+											flexShrink: 0,
+										}}
+									>
+										2
+									</div>
+									<div>
+										<h4 style={{ margin: "0 0 0.5rem 0", fontSize: "1.1rem" }}>
+											Click Deploy
+										</h4>
+										<p
+											style={{ margin: 0, color: "#666", fontSize: "0.95rem" }}
+										>
+											Select your TEE hardware and deployment options
+										</p>
+									</div>
+								</div>
+								<div style={{ display: "flex", alignItems: "flex-start" }}>
+									<div
+										style={{
+											background: "#3498db",
+											color: "white",
+											borderRadius: "50%",
+											width: "32px",
+											height: "32px",
+											display: "flex",
+											alignItems: "center",
+											justifyContent: "center",
+											fontWeight: "bold",
+											marginRight: "1rem",
+											flexShrink: 0,
+										}}
+									>
+										3
+									</div>
+									<div>
+										<h4 style={{ margin: "0 0 0.5rem 0", fontSize: "1.1rem" }}>
+											Application Launched
+										</h4>
+										<p
+											style={{ margin: 0, color: "#666", fontSize: "0.95rem" }}
+										>
+											Your app runs with hardware-guaranteed confidentiality
+										</p>
+									</div>
+								</div>
+							</div>
+							<a
+								href="https://cloud.phala.network/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="cta-button"
+								style={{
+									background: "#3498db",
+									color: "white",
+									display: "inline-block",
+								}}
+							>
+								Try Now →
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Verifiable Computing Section */}
 			<section className="section" style={{ background: "#f8f9fa" }}>
 				<div className="container">
-					<h2 className="section-title">dstack vs Others</h2>
+					<h2 className="section-title">
+						Trust Center - Complete Transparency
+					</h2>
+					<p className="section-subtitle">
+						Every deployed application comes with a comprehensive Trust Center
+						for full verification
+					</p>
 
-					<div style={{ overflowX: "auto", marginTop: "2rem" }}>
-						<table
-							style={{
-								width: "100%",
-								borderCollapse: "collapse",
-								background: "white",
-								borderRadius: "8px",
-								overflow: "hidden",
-							}}
-						>
-							<thead>
-								<tr style={{ background: "#3498db", color: "white" }}>
-									<th style={{ padding: "1rem", textAlign: "left" }}>
-										Capability
-									</th>
-									<th style={{ padding: "1rem", textAlign: "center" }}>
-										dstack
-									</th>
-									<th style={{ padding: "1rem", textAlign: "center" }}>
-										AWS/GCP/Azure
-									</th>
-									<th style={{ padding: "1rem", textAlign: "center" }}>
-										Tinfoil
-									</th>
-									<th style={{ padding: "1rem", textAlign: "center" }}>
-										Others
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr style={{ borderBottom: "1px solid #eee" }}>
-									<td style={{ padding: "1rem", fontWeight: "600" }}>
-										Transparency
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#27ae60",
-										}}
-									>
-										✓ Open Source
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#e74c3c",
-										}}
-									>
-										✗ Proprietary
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#e74c3c",
-										}}
-									>
-										✗ Proprietary
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#e74c3c",
-										}}
-									>
-										✗ Proprietary
-									</td>
-								</tr>
-								<tr
+					<div
+						style={{
+							display: "flex",
+							alignItems: "center",
+							gap: "3rem",
+							flexWrap: "wrap",
+							marginTop: "3rem",
+						}}
+					>
+						<div style={{ flex: "1", minWidth: "300px" }}>
+							<h3
+								style={{
+									fontSize: "1.8rem",
+									marginBottom: "1.5rem",
+									color: "#2c3e50",
+								}}
+							>
+								🔍 Examine Everything
+							</h3>
+							<div style={{ marginBottom: "2rem" }}>
+								<div
 									style={{
-										borderBottom: "1px solid #eee",
-										background: "#f9f9f9",
+										display: "flex",
+										alignItems: "flex-start",
+										marginBottom: "1.5rem",
 									}}
 								>
-									<td style={{ padding: "1rem", fontWeight: "600" }}>
-										Control
-									</td>
-									<td
+									<div
 										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#27ae60",
+											background: "#9b59b6",
+											color: "white",
+											borderRadius: "8px",
+											padding: "0.5rem",
+											marginRight: "1rem",
+											flexShrink: 0,
 										}}
 									>
-										✓ Customer Keys
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#e74c3c",
-										}}
-									>
-										✗ Vendor Controlled
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#e74c3c",
-										}}
-									>
-										✗ Vendor Controlled
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#e74c3c",
-										}}
-									>
-										✗ Third-party
-									</td>
-								</tr>
-								<tr style={{ borderBottom: "1px solid #eee" }}>
-									<td style={{ padding: "1rem", fontWeight: "600" }}>
-										Auditability
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#27ae60",
-										}}
-									>
-										✓ Real-time Attestation
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#f39c12",
-										}}
-									>
-										△ Limited
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#f39c12",
-										}}
-									>
-										△ Limited
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#e74c3c",
-										}}
-									>
-										✗ None
-									</td>
-								</tr>
-								<tr
+										📋
+									</div>
+									<div>
+										<h4 style={{ margin: "0 0 0.5rem 0", fontSize: "1.1rem" }}>
+											Source Code Verification
+										</h4>
+										<p
+											style={{ margin: 0, color: "#666", fontSize: "0.95rem" }}
+										>
+											Review the exact source code running in your TEE
+											environment
+										</p>
+									</div>
+								</div>
+								<div
 									style={{
-										borderBottom: "1px solid #eee",
-										background: "#f9f9f9",
+										display: "flex",
+										alignItems: "flex-start",
+										marginBottom: "1.5rem",
 									}}
 								>
-									<td style={{ padding: "1rem", fontWeight: "600" }}>
-										Performance
-									</td>
-									<td
+									<div
 										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#27ae60",
+											background: "#e74c3c",
+											color: "white",
+											borderRadius: "8px",
+											padding: "0.5rem",
+											marginRight: "1rem",
+											flexShrink: 0,
 										}}
 									>
-										✓ &lt;5% Overhead
-									</td>
-									<td
+										🔧
+									</div>
+									<div>
+										<h4 style={{ margin: "0 0 0.5rem 0", fontSize: "1.1rem" }}>
+											Hardware Information
+										</h4>
+										<p
+											style={{ margin: 0, color: "#666", fontSize: "0.95rem" }}
+										>
+											Detailed specs of the TEE hardware running your
+											application
+										</p>
+									</div>
+								</div>
+								<div
+									style={{
+										display: "flex",
+										alignItems: "flex-start",
+										marginBottom: "1.5rem",
+									}}
+								>
+									<div
 										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#f39c12",
+											background: "#f39c12",
+											color: "white",
+											borderRadius: "8px",
+											padding: "0.5rem",
+											marginRight: "1rem",
+											flexShrink: 0,
 										}}
 									>
-										△ Varies
-									</td>
-									<td
+										🌐
+									</div>
+									<div>
+										<h4 style={{ margin: "0 0 0.5rem 0", fontSize: "1.1rem" }}>
+											Network Configuration
+										</h4>
+										<p
+											style={{ margin: 0, color: "#666", fontSize: "0.95rem" }}
+										>
+											Complete network topology and security settings
+										</p>
+									</div>
+								</div>
+								<div style={{ display: "flex", alignItems: "flex-start" }}>
+									<div
 										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#95a5a6",
+											background: "#27ae60",
+											color: "white",
+											borderRadius: "8px",
+											padding: "0.5rem",
+											marginRight: "1rem",
+											flexShrink: 0,
 										}}
 									>
-										? Unknown
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#95a5a6",
-										}}
-									>
-										? Unknown
-									</td>
-								</tr>
-								<tr>
-									<td style={{ padding: "1rem", fontWeight: "600" }}>
-										AI Focus
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#27ae60",
-										}}
-									>
-										✓ Purpose-built
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#f39c12",
-										}}
-									>
-										△ Generic Cloud
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#27ae60",
-										}}
-									>
-										✓ Inference Only
-									</td>
-									<td
-										style={{
-											padding: "1rem",
-											textAlign: "center",
-											color: "#f39c12",
-										}}
-									>
-										△ Limited
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-
-					<div style={{ textAlign: "center", marginTop: "3rem" }}>
-						<a
-							href="https://docs.phala.network/dstack/design-documents"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="cta-button"
-							style={{
-								background: "#27ae60",
-								color: "white",
-							}}
-						>
-							🔬 Know More about dstack
-						</a>
+										✅
+									</div>
+									<div>
+										<h4 style={{ margin: "0 0 0.5rem 0", fontSize: "1.1rem" }}>
+											Attestation Report
+										</h4>
+										<p
+											style={{ margin: 0, color: "#666", fontSize: "0.95rem" }}
+										>
+											Cryptographic proof of execution environment integrity
+										</p>
+									</div>
+								</div>
+							</div>
+							<a
+								href="https://tee-visualization.vercel.app/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="cta-button"
+								style={{
+									background: "#9b59b6",
+									color: "white",
+									display: "inline-block",
+								}}
+							>
+								Learn More →
+							</a>
+						</div>
+						<div style={{ flex: "1", minWidth: "300px" }}>
+							<img
+								src="/res/trust-center.png"
+								alt="Trust Center Interface"
+								style={{
+									width: "100%",
+									height: "auto",
+									borderRadius: "12px",
+									boxShadow: "0 8px 25px rgba(0, 0, 0, 0.1)",
+									border: "1px solid #e1e5e9",
+								}}
+							/>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -610,13 +679,6 @@ export default function Home() {
 						</div>
 
 						<div className="sponsor-card">
-							<h4 style={{ marginBottom: "0.5rem" }}>🎓 Andrew Miller</h4>
-							<p style={{ fontSize: "0.9rem", color: "#666" }}>
-								UIUC Professor & Distributed Systems Expert
-							</p>
-						</div>
-
-						<div className="sponsor-card">
 							<h4 style={{ marginBottom: "0.5rem" }}>🧠 Near AI</h4>
 							<p style={{ fontSize: "0.9rem", color: "#666" }}>
 								Co-founded by Transformer Inventor
@@ -650,6 +712,277 @@ export default function Home() {
 							}}
 						>
 							Join Our Community
+						</a>
+					</div>
+				</div>
+			</section>
+
+			{/* Competitive Advantage */}
+			<section className="section" style={{ background: "#f8f9fa" }}>
+				<div className="container">
+					<h2 className="section-title">dstack vs Others</h2>
+
+					<div style={{ overflowX: "auto", marginTop: "2rem" }}>
+						<table
+							style={{
+								width: "100%",
+								borderCollapse: "collapse",
+								background: "white",
+								borderRadius: "8px",
+								overflow: "hidden",
+							}}
+						>
+							<thead>
+								<tr style={{ background: "#3498db", color: "white" }}>
+									<th style={{ padding: "1rem", textAlign: "left" }}>
+										Capability
+									</th>
+									<th style={{ padding: "1rem", textAlign: "center" }}>
+										dstack
+									</th>
+									<th style={{ padding: "1rem", textAlign: "center" }}>
+										AWS/GCP/Azure
+									</th>
+									<th style={{ padding: "1rem", textAlign: "center" }}>
+										ConfidentialContainers
+									</th>
+									<th style={{ padding: "1rem", textAlign: "center" }}>
+										Others
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr style={{ borderBottom: "1px solid #eee" }}>
+									<td style={{ padding: "1rem", fontWeight: "600" }}>
+										Transparency
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#27ae60",
+										}}
+									>
+										✓ Open Source
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#e74c3c",
+										}}
+									>
+										✗ Proprietary
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#27ae60",
+										}}
+									>
+										✓ Open Source
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#e74c3c",
+										}}
+									>
+										✗ Proprietary
+									</td>
+								</tr>
+								<tr
+									style={{
+										borderBottom: "1px solid #eee",
+										background: "#f9f9f9",
+									}}
+								>
+									<td style={{ padding: "1rem", fontWeight: "600" }}>
+										Control
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#27ae60",
+										}}
+									>
+										✓ Code Controlled
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#e74c3c",
+										}}
+									>
+										✗ Vendor Controlled
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#e74c3c",
+										}}
+									>
+										✗ Developer Controlled
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#e74c3c",
+										}}
+									>
+										✗ Third-party
+									</td>
+								</tr>
+								<tr style={{ borderBottom: "1px solid #eee" }}>
+									<td style={{ padding: "1rem", fontWeight: "600" }}>
+										Auditability
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#27ae60",
+										}}
+									>
+										✓ Audited by zkSecurity
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#f39c12",
+										}}
+									>
+										△ Limited
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#e74c3c",
+										}}
+									>
+										✗ No audit
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#e74c3c",
+										}}
+									>
+										✗ None
+									</td>
+								</tr>
+								<tr
+									style={{
+										borderBottom: "1px solid #eee",
+										background: "#f9f9f9",
+									}}
+								>
+									<td style={{ padding: "1rem", fontWeight: "600" }}>
+										Performance
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#27ae60",
+										}}
+									>
+										✓ &lt;5% Overhead
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#f39c12",
+										}}
+									>
+										△ Varies
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#95a5a6",
+										}}
+									>
+										? Unknown
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#95a5a6",
+										}}
+									>
+										? Unknown
+									</td>
+								</tr>
+								<tr>
+									<td style={{ padding: "1rem", fontWeight: "600" }}>
+										AI Focus
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#27ae60",
+										}}
+									>
+										✓ Purpose-built
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#f39c12",
+										}}
+									>
+										△ Generic Cloud
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#f39c12",
+										}}
+									>
+										△ Generic
+									</td>
+									<td
+										style={{
+											padding: "1rem",
+											textAlign: "center",
+											color: "#f39c12",
+										}}
+									>
+										△ Limited
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div style={{ textAlign: "center", marginTop: "3rem" }}>
+						<a
+							href="https://docs.phala.network/dstack/design-documents"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="cta-button"
+							style={{
+								background: "#27ae60",
+								color: "white",
+							}}
+						>
+							🔬 Know More about dstack
 						</a>
 					</div>
 				</div>
