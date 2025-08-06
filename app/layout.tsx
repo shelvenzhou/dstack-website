@@ -1,20 +1,22 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'dstack - Confidential AI Platform for Developers',
-  description: 'Deploy your AI applications with hardware-guaranteed privacy using TEE technology. No code changes required.',
-  keywords: 'confidential AI, TEE, trusted execution environment, AI privacy, secure AI deployment',
-}
+	title: "dstack - Open-Source Confidential Computing Platform",
+	description:
+		"Open-source platform for confidential AI, confidential computing, and TEE-powered private cloud compute. Deploy secure applications with hardware-guaranteed privacy.",
+	keywords:
+		"confidential AI, confidential computing, TEE, trusted execution environment, private cloud compute, open source, secure computing, privacy-preserving AI, Intel TDX",
+};
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  )
+	return (
+		<html lang="en">
+			<body>{children}</body>
+		</html>
+	);
 }
